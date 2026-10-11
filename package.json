@@ -1,0 +1,26 @@
+{
+  "name": "playwrightproject_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:dev": "cross TEST_ENV=dev npx playwright test",
+    "test:stage": "cross TEST_ENV=stage npx playwright test",
+    "test:prod": "cross TEST_ENV=prod npx playwright test",
+    "test": "npx playwright test",
+    "test:report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0",
+    "cross": "^1.0.0",
+    "xlsx": "^0.18.5"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.1"
+  }
+}
